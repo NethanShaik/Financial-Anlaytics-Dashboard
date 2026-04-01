@@ -43,6 +43,7 @@ function Dashboard() {
     };
 
     return(
+
         <div className="min-h-screen bg-grey-100 p-6">
             <h1 className="mb-5 text-3xl font-bold">Financial Dashboard</h1>
             <SummaryCards summary={summary}/>
