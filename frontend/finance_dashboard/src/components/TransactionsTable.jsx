@@ -1,6 +1,6 @@
 function TransactionsTable({transactions = []}) {
     return (
-        <div className="mb-5 rounded-lg bg-white p-4 shadow">
+        <div className="mb-5 rounded-lg bg-white/50 backdrop-blur-lg p-4 shadow">
             <h2 className="mb-4 text-xl font-semibold">Transactions</h2>
             <table className="w-full border-collapse">
                 <thead>

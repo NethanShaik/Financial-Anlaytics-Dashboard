@@ -1,5 +1,6 @@
 import { useState, useEffect} from "react";
 import api from "../services/api.js";
+import '../index.css';
 import SummaryCards from "../components/SummaryCards.jsx";
 import TransactionsTable from "../components/TransactionsTable.jsx";
 import CategoryBreakdown from "../components/CategoryBreakdown.jsx";
@@ -44,7 +45,7 @@ function Dashboard() {
 
     return(
 
-        <div className="min-h-screen bg-grey-100 p-6">
+        <div className="min-h-screen dashboad_background p-6">
             <h1 className="mb-5 text-3xl font-bold">Financial Dashboard</h1>
             <SummaryCards summary={summary}/>
             <TransactionsTable transactions={transactions}/>

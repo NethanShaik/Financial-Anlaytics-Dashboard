@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.dashboad_background{
+background: linear-gradient(150deg, #0078A7, white);
+}
