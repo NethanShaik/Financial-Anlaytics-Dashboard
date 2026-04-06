@@ -3,3 +3,4 @@ finenv
 frontend/finance_dashboard/node_modules
 frontend/finance_dashboard/public
 frontend/finance_dashboard/README.md
+.DS_Store

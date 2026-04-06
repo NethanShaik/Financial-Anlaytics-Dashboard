@@ -44,9 +44,8 @@ function Dashboard() {
     };
 
     return(
-
-        <div className="min-h-screen dashboad_background p-6">
-            <h1 className="pd-2     mb-5 text-3xl font-bold">Financial Dashboard</h1>
+        <div className="min-h-screen dashboard_background p-6">
+            <h1 className="pd-2 ml-16 mb-5 text-3xl font-bold">Financial Dashboard</h1>
             <SummaryCards summary={summary}/>
             <TransactionsTable transactions={transactions}/>
             <CategoryBreakdown categories={category}/>
