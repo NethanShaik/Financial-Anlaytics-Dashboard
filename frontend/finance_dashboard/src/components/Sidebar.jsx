@@ -33,6 +33,11 @@ function Sidebar ({isOpen, onClose})
                             Monthly Chart
                             </NavLink>
                         </li>
+                        <li className="cursor-pointer rounderd p-2 hover:bg-white/40 hover:text-shadow-blue-500">
+                            <NavLink to = "/transaction_form" onClick={onClose}>
+                            Transaction Log Form
+                            </NavLink>
+                        </li>
                     </ul>
                 </>
             )}

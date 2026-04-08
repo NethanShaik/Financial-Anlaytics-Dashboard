@@ -2,6 +2,7 @@ import Dashboard from "./pages/Dashboard.jsx";
 import {useState} from "react";
 import Sidebar from "./components/Sidebar.jsx";
 import MonthlyCharts from "./pages/MonthlyCharts.jsx";
+import TransactionForm from "./pages/TransactionForm.jsx";
 import {Routes, Route} from "react-router-dom";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/monthly_charts" element={<MonthlyCharts />} />
+        <Route path="/transaction_form" element={<TransactionForm />} />
       </Routes>
     </main>
   </div>
