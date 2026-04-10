@@ -10,6 +10,7 @@ function TransactionForm({onTransactionAdded}) {
         transaction_date: "",
         description: "",
     });
+    const [success, setSuccess] = useState();
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState();
 
@@ -39,7 +40,8 @@ function TransactionForm({onTransactionAdded}) {
                 transaction_date: "",
                 description: "",
             });
-            onTransactionAdded();
+            onTransactionAdded?.();
+            setSuccess("Added Transaction Successfully");
         } catch (err) {
             console.log("Error adding transactions", err.response.data);
             setError("Failed to add Transaction.");
@@ -114,6 +116,7 @@ function TransactionForm({onTransactionAdded}) {
                             {loading ? "Saving...":"Log Transaction"}
                         </button>
                     </div>
+                    {success && <p style={{color:"green"}}>{success}</p>}
                     {error && <p style={{color:"red"}}>{error}</p>}
                 </form>
             </div>

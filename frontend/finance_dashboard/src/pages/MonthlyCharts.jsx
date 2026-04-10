@@ -19,7 +19,7 @@ function MonthlyCharts () {
                                     if (!groupedData[month]){
                                         groupedData[month] = {
                                             month: month,
-                                            revenue: 0,
+                                            income: 0,
                                             expense: 0,
                                         };
                                     }
@@ -45,7 +45,7 @@ function MonthlyCharts () {
                             <LineChart data = {monthlyData} className="mt-50 rounded-lg bg-white/50 backdrop-blur-lg p-4 shadow pt-10 pb-10">
                                 <CartesianGrid strokeDasharray="3 3" />
                                     <XAxis dataKey = "month" />
-                                    <YAxis dataKey/>
+                                    <YAxis />
                                     <Tooltip />
                                     <Legend />
                                     <Line type = "monotone" dataKey="income" stroke="#00b894" />
