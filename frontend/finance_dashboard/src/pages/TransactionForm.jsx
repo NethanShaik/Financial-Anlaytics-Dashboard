@@ -35,15 +35,15 @@ function TransactionForm({onTransactionAdded}) {
             setFormData({
                 title: "",
                 amount: "",
-                transaction_types: "",
-                transaction_category: "",
+                transaction_types: "expense",
+                transaction_category: "operations",
                 transaction_date: "",
                 description: "",
             });
             onTransactionAdded?.();
             setSuccess("Added Transaction Successfully");
         } catch (err) {
-            console.log("Error adding transactions", err.response.data);
+            console.log("Error adding transactions", err.response?.data ?? err.message);
             setError("Failed to add Transaction.");
         } finally {
             setLoading(false);
